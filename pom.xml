@@ -6,7 +6,7 @@
 
 	<groupId>12eff34f-c3f0-4f0b-9a82-5a29dc2770bb</groupId>
 	<artifactId>health_check</artifactId>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 	<packaging>mule-application</packaging>
 
 	<name>health_check</name>
@@ -40,12 +40,12 @@
 						<releaseChannel>LTS</releaseChannel>
 						<javaVersion>17</javaVersion>
 						<server>anypoint-exchange-v3</server>
-						<username>${USER}</username>
-						<password>${PASS}</password>
+						<username>Sathwik_Nalla_01-10-2025</username>
+						<password>Bl@ckB@ckB@t#2024</password>
 						<businessGroupId>${anypoint.businessGroup}</businessGroupId>
-						<environment>${ENV}</environment>
+						<environment>Dev</environment>
 						<target>cloudhub-us-east-2</target>
-						<applicationName>${APP_NAME}</applicationName>
+						<applicationName>health-check-cicd</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<deploymentSettings>
@@ -59,12 +59,12 @@
 							<generateDefaultPublicUrl>false</generateDefaultPublicUrl>
 						</deploymentSettings>
 						<secureProperties>
-							<key>${KEY}</key>
-							<anypoint.platform.client_id>${ENV_CLIENT_ID}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${ENV_CLIENT_SECRET}</anypoint.platform.client_secret>
+							<key>mule-dev</key>
+							<anypoint.platform.client_id>ed44ab905a5b41edae18dd10d17cea4e</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>9929FFa46cEA4727A99f5f2393f3030A</anypoint.platform.client_secret>
 						</secureProperties>
 						<properties>
-							<mule.env>${MULE_ENV}</mule.env>
+							<mule.env>dev</mule.env>
 						</properties>
 					</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
