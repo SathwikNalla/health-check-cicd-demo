@@ -25,7 +25,13 @@ jobs:
           distribution: "zulu"
           java-version: 17
       # - name: Build JAR
-      #   run: mvn clean package -DmuleDeploy
+      #   run: mvn clean package -DmuleDeplo
+      - name: Download shared settings.xml
+        run: |
+          git clone --depth 1 https://github.com/SathwikNalla/maven-settings-repo.git
+          mkdir -p .maven
+          cp maven-settings-repo/.maven/settings.xml .maven/settings.xml
+ 
       - name: Publish to Exchange
         run: |
           mvn deploy --settings .maven/settings.xml -DskipMunitTests \
@@ -51,7 +57,7 @@ jobs:
      # Clone shared settings.xml
     - name: Download shared settings.xml
       run: |
-        git clone --depth 1 https://github.com/Indrajith045/maven-settings-repo.git
+        git clone --depth 1 https://github.com/SathwikNalla/maven-settings-repo.git
         mkdir -p .maven
         cp maven-settings-repo/.maven/settings.xml .maven/settings.xml
         
