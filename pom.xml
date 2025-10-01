@@ -6,7 +6,7 @@
 
 	<groupId>12eff34f-c3f0-4f0b-9a82-5a29dc2770bb</groupId>
 	<artifactId>health_check</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.6</version>
 	<packaging>mule-application</packaging>
 
 	<name>health_check</name>
@@ -45,13 +45,13 @@
 						<businessGroupId>${anypoint.businessGroup}</businessGroupId>
 						<environment>${ENV}</environment>
 						<target>cloudhub-us-east-2</target>
-						<applicationName>${appname}</applicationName>
+						<applicationName>${APP_NAME}</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<deploymentSettings>
 							<http>
 								<inbound>
-									<publicUrl>https://${appname}-fnvkev.fj29p4.usa-e2.cloudhub.io</publicUrl>
+									<publicUrl>https://${APP_NAME}-fnvkev.fj29p4.usa-e2.cloudhub.io</publicUrl>
 								</inbound>
 							</http>
 							<lastMileSecurity>false</lastMileSecurity>
