@@ -40,9 +40,8 @@
 						<releaseChannel>LTS</releaseChannel>
 						<javaVersion>17</javaVersion>
 						<server>anypoint-exchange-v3</server>
-						<connectedAppClientId>${USER}</connectedAppClientId>
-						<connectedAppClientSecret>${PASS}</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<username>${USER}</username>
+						<password>${PASS}</password>
 						<businessGroupId>${anypoint.businessGroup}</businessGroupId>
 						<environment>${ENV}</environment>
 						<target>cloudhub-us-east-2</target>
