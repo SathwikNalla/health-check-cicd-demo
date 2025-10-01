@@ -41,7 +41,7 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>${USER}</username>
 						<password>${PASS}</password>
-						<applicationName>${appName}</applicationName>
+						<applicationName>${APP_NAME}</applicationName>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
 					</cloudhub2Deployment>
