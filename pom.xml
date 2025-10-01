@@ -6,7 +6,7 @@
 
 	<groupId>12eff34f-c3f0-4f0b-9a82-5a29dc2770bb</groupId>
 	<artifactId>health_check</artifactId>
-	<version>1.0.6</version>
+	<version>1.0.7</version>
 	<packaging>mule-application</packaging>
 
 	<name>health_check</name>
@@ -59,12 +59,12 @@
 							<generateDefaultPublicUrl>false</generateDefaultPublicUrl>
 						</deploymentSettings>
 						<secureProperties>
-							<key>${key}</key>
-							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
+							<key>${KEY}</key>
+							<anypoint.platform.client_id>${ENV_CLIENT_ID}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>${ENV_CLIENT_SECRET}</anypoint.platform.client_secret>
 						</secureProperties>
 						<properties>
-							<mule.env>${mule.env}</mule.env>
+							<mule.env>${MULE_ENV}</mule.env>
 						</properties>
 					</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
