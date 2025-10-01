@@ -36,11 +36,11 @@
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
-						<environment>Sandbox</environment>
+						<environment>Dev</environment>
 						<target>CloudHub 2.0</target>
 						<muleVersion>4.4.0</muleVersion>
-						<username>${user}</username>
-						<password>${pass}</password>
+						<username>${USER}</username>
+						<password>${PASS}</password>
 						<applicationName>${appName}</applicationName>
 						<replicas>1</replicas>
 						<vCores>1</vCores>
