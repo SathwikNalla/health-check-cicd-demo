@@ -6,7 +6,7 @@
 
 	<groupId>12eff34f-c3f0-4f0b-9a82-5a29dc2770bb</groupId>
 	<artifactId>health_check</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>health_check</name>
@@ -37,7 +37,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
 						<environment>Dev</environment>
-						<target>cloudhub-us-east-2</target>
+						<target>cloudhub-us-east-1</target>
 						<muleVersion>4.4.0</muleVersion>
 						<username>${USER}</username>
 						<password>${PASS}</password>
