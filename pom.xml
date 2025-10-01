@@ -36,15 +36,39 @@
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
-						<environment>Dev</environment>
+						<muleVersion>${app.runtime}</muleVersion>
+						<releaseChannel>LTS</releaseChannel>
+						<javaVersion>17</javaVersion>
+						<server>anypoint-exchange-v3</server>
+						<connectedAppClientId>${USER}</connectedAppClientId>
+						<connectedAppClientSecret>${PASS}</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<businessGroupId>${anypoint.businessGroup}</businessGroupId>
+						<environment>${ENV}</environment>
 						<target>cloudhub-us-east-2</target>
-						<muleVersion>4.4.0</muleVersion>
-						<username>${USER}</username>
-						<password>${PASS}</password>
-						<applicationName>${APP_NAME}</applicationName>
+						<applicationName>${appname}</applicationName>
 						<replicas>1</replicas>
-						<vCores>1</vCores>
+						<vCores>0.1</vCores>
+						<deploymentSettings>
+							<http>
+								<inbound>
+									<publicUrl>https://${appname}-fnvkev.fj29p4.usa-e2.cloudhub.io</publicUrl>
+								</inbound>
+							</http>
+							<lastMileSecurity>false</lastMileSecurity>
+							<forwardSslSession>false</forwardSslSession>
+							<generateDefaultPublicUrl>false</generateDefaultPublicUrl>
+						</deploymentSettings>
+						<secureProperties>
+							<key>${key}</key>
+							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
+						</secureProperties>
+						<properties>
+							<mule.env>${mule.env}</mule.env>
+						</properties>
 					</cloudhub2Deployment>
+					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
