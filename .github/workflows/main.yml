@@ -26,11 +26,6 @@ jobs:
           java-version: 17
       # - name: Build JAR
       #   run: mvn clean package -DmuleDeploy
-      - name: Download shared settings.xml
-        run: |
-          mkdir -p .maven
-          cp maven-settings-repo/.maven/settings.xml .maven/settings.xml
-
       - name: Publish to Exchange
         run: |
           mvn deploy --settings .maven/settings.xml -DskipMunitTests \
