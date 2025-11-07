@@ -6,7 +6,7 @@
 
 	<groupId>12eff34f-c3f0-4f0b-9a82-5a29dc2770bb</groupId>
 	<artifactId>health_check</artifactId>
-	<version>1.0.12</version>
+	<version>1.0.13</version>
 	<packaging>mule-application</packaging>
 
 	<name>health_check</name>
